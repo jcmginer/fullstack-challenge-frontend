@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# AIT Full Stack Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application developed with React, which includes the following features:
 
-## Available Scripts
+· Main page with a Pokémon search engine
+· Page called Gif Pokémon with a Pokémon gif search engine
+· Login with auth0
 
-In the project directory, you can run:
+In addition, the following technologies and libraries have been used:
 
-### `npm start`
+· JavaScript
+· HTML
+· CSS
+· React.js
+· Redux Toolkit
+· Node.js
+· Express.js
+· MongoDB
+· UseState, useEffect hooks
+· Libraries @auth0/auth0-react, @reduxjs/toolkit, @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, bootstrap, react, react-bootstrap, react-dom, react-redux, react-router-dom, react-scripts, redux, styled-components, web-vitals.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+· Node.js
+· npm or yarn
+# Installation
 
-### `npm test`
+1. Download or clone the repository
+2. Access the project folder and run the command npm install or yarn install to install the necessary dependencies.
+3. Once the installation is complete, run the command npm start or yarn start to start the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Usage
+1. Access the main page and perform Pokémon searches.
+2. Access the Gif Pokémon page and perform Pokémon gif searches.
+3. Login to the application through auth0.
 
-### `npm run build`
+# Contribution
+If you wish to collaborate on this project, please open a new pull request with your changes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is under the MIT license.
