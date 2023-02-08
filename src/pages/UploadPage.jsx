@@ -1,8 +1,12 @@
 import React from 'react'
+import TopNav from '../Components/TopNav/TopNav'
 
 const UploadPage = () => {
     return (
-        <div>UploadPage</div>
+        <>
+            <TopNav />
+            <div>UploadPage</div>
+        </>
     )
 }
 

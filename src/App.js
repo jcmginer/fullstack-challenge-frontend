@@ -1,24 +1,29 @@
-// import AppRouter from './routes/AppRouter';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import Search from './Components/Search/Search';
-import TopNav from './Components/TopNav/TopNav';
+import Router from './routes/Router';
+//import TopNav from './Components/TopNav/TopNav';
+//import PokemonPage from './pages/PokemonPage';
+//import AppRouter from './routes/AppRouter';
+//import { Router } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <div className="App">
-        <header className="App-header">
-          <TopNav />
-          <img src={logo} className="App-logo" alt="logo" />
-          <Search />
-        </header>
-        {/* <main>
-          <AppRouter />
-        </main> */}
-      </div>
+      <Router />
     </>
+    // <Router>
+    // <div className="App">
+    //     <TopNav />
+    //   <header className="App-header">
+    //     <PokemonPage />
+    //   </header>
+    //   <main>
+    //     <AppRouter />
+    //   </main>
+    // </div>
+    // </Router>
   );
+
 }
 
 export default App;

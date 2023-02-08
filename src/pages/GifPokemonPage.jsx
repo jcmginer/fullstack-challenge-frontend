@@ -1,8 +1,12 @@
 import React from 'react'
+import TopNav from '../Components/TopNav/TopNav'
 
 const GifPokemonPage = () => {
     return (
-        <div>GifPokemonPage</div>
+        <>
+            <TopNav />
+            <div>GifPokemonPage</div>
+        </>
     )
 }
 

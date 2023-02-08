@@ -1,8 +1,13 @@
 import React from 'react'
+import TopNav from '../Components/TopNav/TopNav'
+
 
 const CategoriesPage = () => {
     return (
-        <div>CategoriesPage</div>
+        <>
+            <TopNav />
+            <div>CategoriesPage</div>
+        </>
     )
 }
 
