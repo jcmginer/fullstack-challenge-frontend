@@ -28,11 +28,11 @@ const SearchGifPokemon = () => {
                 />
                 <button type="submit">Search</button>
                 <br />
-                <ul>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: "16px" }}>
                     {searchResults.map((result) => (
                         <img key={result.id} src={result.images.downsized_medium.url} alt={searchResults.name} width="150px" />
                     ))}
-                </ul>
+                </div>
             </form>
         </div>
     );
