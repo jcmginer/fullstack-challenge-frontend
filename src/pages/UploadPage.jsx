@@ -1,11 +1,14 @@
 import React from 'react'
+import FormUpload from '../Components/FormUpload/FormUpload'
 import TopNav from '../Components/TopNav/TopNav'
 
 const UploadPage = () => {
     return (
         <>
-            <TopNav />
-            <div>UploadPage</div>
+            <main>
+                <TopNav />
+                <FormUpload />
+            </main>
         </>
     )
 }
