@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './SearchPokemon.css'
+import { getPokeApi } from '../../Api/getApi';
 
 const SearchPokemon = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -11,13 +12,8 @@ const SearchPokemon = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        try {
-            const response = await fetch(`https://pokeapi.co/api/v2/pokemon-form/${searchTerm}`);
-            const data = await response.json();
-            setSearchResults(data);
-        } catch (error) {
-            console.error(error);
-        }
+        const results = await getPokeApi(searchTerm);
+        setSearchResults(results);
     };
 
     return (
