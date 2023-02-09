@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../SearchPokemon/SearchPokemon.css'
+import '../SearchGifPokemon/SearchGifPokemon.css'
 import { getGifApi } from '../../Api/getApi';
 
 const CategoriesSelector = () => {
@@ -22,7 +22,7 @@ const CategoriesSelector = () => {
                 <button value='squirtle' onClick={() => setSearchTerm('squirtle')} type="submit">Squirtle</button>
                 <button value='charmander' onClick={() => setSearchTerm('charmander')} type="submit">Charmander</button>
                 <br />
-                <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: "16px"}}>
+                <div className="result-container">
                     {searchResults.map((result) => (
                         <img key={result.id} src={result.images.downsized_medium.url} alt={searchResults.name} width="150px" />
                     ))}

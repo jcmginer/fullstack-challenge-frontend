@@ -26,11 +26,12 @@ const SearchPokemon = () => {
                     value={searchTerm}
                     onChange={handleChange}
                 />
-                <button type="submit">Search</button>
-                <br />
-                <img src={searchResults.sprites?.front_default} alt={searchResults.name} width="200px" />
-                <img src={searchResults.sprites?.back_default} alt={searchResults.name} width="200px" />
-                <h3>{searchResults.name?.toUpperCase()}</h3>
+                <button className="btn-search" type="submit">Search</button>
+                <div className="result-container">
+                    <img src={searchResults.sprites?.front_default} alt={searchResults.name} width="200px" />
+                    <img src={searchResults.sprites?.back_default} alt={searchResults.name} width="200px" />
+                </div>
+                    <h3 className="name-pokemon">{searchResults.name?.toUpperCase()}</h3>
             </form>
         </div>
     );

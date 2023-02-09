@@ -8,3 +8,18 @@
     background-size: cover;
     color: white;
   }
+
+  .btn-search {
+    background-color: #00bfff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.result-container {
+  background-color: rgba(0, 0, 0, 0.33);
+  border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    padding: 20px;
+}
