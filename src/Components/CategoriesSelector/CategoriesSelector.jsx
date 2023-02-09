@@ -3,7 +3,7 @@ import '../SearchPokemon/SearchPokemon.css'
 import { getGifApi } from '../../Api/getApi';
 
 const CategoriesSelector = () => {
-    const [searchTerm, setSearchTerm] = useState("pikachu");
+    const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
 
 
@@ -18,6 +18,9 @@ const CategoriesSelector = () => {
             <form onSubmit={handleSubmit}>
                 <h2>Select Pokemon GIF category</h2>
                 <button value='pikachu' onClick={() => setSearchTerm('pikachu')} type="submit">Pikachu</button>
+                <button value='bulbasaur' onClick={() => setSearchTerm('bulbasaur')} type="submit">Bulbasaur</button>
+                <button value='squirtle' onClick={() => setSearchTerm('squirtle')} type="submit">Squirtle</button>
+                <button value='charmander' onClick={() => setSearchTerm('charmander')} type="submit">Charmander</button>
                 <br />
                 <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: "16px"}}>
                     {searchResults.map((result) => (
