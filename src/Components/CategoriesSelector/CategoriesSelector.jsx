@@ -2,31 +2,22 @@ import React, { useState } from "react";
 import '../SearchPokemon/SearchPokemon.css'
 import { getGifApi } from '../../Api/getApi';
 
-
-const SearchGifPokemon = () => {
-    const [searchTerm, setSearchTerm] = useState("");
+const CategoriesSelector = () => {
+    const [searchTerm, setSearchTerm] = useState("pikachu");
     const [searchResults, setSearchResults] = useState([]);
 
-    const handleChange = (event) => {
-        setSearchTerm(event.target.value);
-    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         const results = await getGifApi(searchTerm);
         setSearchResults(results);
     };
+
     return (
         <div className="search-container">
             <form onSubmit={handleSubmit}>
-                <h2>Search GIF of Pokemon</h2>
-                <input
-                    type="text"
-                    placeholder="Name Pokemon..."
-                    value={searchTerm}
-                    onChange={handleChange}
-                />
-                <button type="submit">Search</button>
+                <h2>Select Pokemon GIF category</h2>
+                <button value='pikachu' onClick={() => setSearchTerm('pikachu')} type="submit">Pikachu</button>
                 <br />
                 <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: "16px"}}>
                     {searchResults.map((result) => (
@@ -38,4 +29,4 @@ const SearchGifPokemon = () => {
     );
 };
 
-export default SearchGifPokemon;
+export default CategoriesSelector;

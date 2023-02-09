@@ -1,8 +1,9 @@
 import React from 'react'
+import '../SearchPokemon/SearchPokemon.css'
 
 const FormUpload = () => {
   return (
-    <div>FormUpload</div>
+    <h2 className='search-container'>FormUpload</h2>
   )
 }
 
