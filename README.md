@@ -4,6 +4,7 @@ This project is a web application developed with React, which includes the follo
 
 · Main page with a Pokémon search engine <br>
 · Page called Gif Pokémon with a Pokémon gif search engine <br>
+· Categories page <br>
 · Login with auth0
 
 In addition, the following technologies and libraries have been used:
