@@ -18,10 +18,10 @@ const CategoriesSelector = () => {
             <form onSubmit={handleSubmit}>
                 <h2>Select Pokemon GIF category</h2>
                 <div className="btn-container">
-                <button className="btn-search" value='pikachu' onClick={() => setSearchTerm('pikachu')} type="submit">Pikachu</button>
-                <button className="btn-search" value='bulbasaur' onClick={() => setSearchTerm('bulbasaur')} type="submit">Bulbasaur</button>
-                <button className="btn-search" value='squirtle' onClick={() => setSearchTerm('squirtle')} type="submit">Squirtle</button>
-                <button className="btn-search" value='charmander' onClick={() => setSearchTerm('charmander')} type="submit">Charmander</button>
+                    <button className="btn-search" value='pikachu' onClick={() => setSearchTerm('pikachu')} type="submit">Pikachu</button>
+                    <button className="btn-search" value='bulbasaur' onClick={() => setSearchTerm('bulbasaur')} type="submit">Bulbasaur</button>
+                    <button className="btn-search" value='squirtle' onClick={() => setSearchTerm('squirtle')} type="submit">Squirtle</button>
+                    <button className="btn-search" value='charmander' onClick={() => setSearchTerm('charmander')} type="submit">Charmander</button>
                 </div>
                 <div className="result-container">
                     {searchResults.map((result) => (

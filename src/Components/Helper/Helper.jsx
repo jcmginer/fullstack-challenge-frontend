@@ -32,10 +32,10 @@ export const Helper = () => {
         const responseData = await response.json()
 
         if (!!responseData.info[0]) {
-            console.log('El usuario existe en la bbdd');
+            console.log('The user exists in the database');
             await dispatch(setUserLogged(responseData.info[0]));
         } else {
-            console.log('El usuario no existe en la bbdd');
+            console.log('The user does not exist in the database');
             const $user = {
                 email: user.email,
                 userData: {
@@ -56,7 +56,6 @@ export const Helper = () => {
                 }
             });
             const data = await request.json()
-            console.log(data);
             await dispatch(setUserLogged(data.info));
         }
     }

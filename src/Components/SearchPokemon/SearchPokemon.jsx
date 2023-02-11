@@ -28,8 +28,8 @@ const SearchPokemon = () => {
                 />
                 <button className="btn-search" type="submit">Search</button>
                 <div className="result-container">
-                    <img src={searchResults.sprites?.front_default} alt={searchResults.name} width="200px" />
-                    <img src={searchResults.sprites?.back_default} alt={searchResults.name} width="200px" />
+                    <img src={searchResults.sprites?.front_default} alt={searchResults.name} width="250px" />
+                    <img src={searchResults.sprites?.back_default} alt={searchResults.name} width="250px" />
                 </div>
                     <h3 className="name-pokemon">{searchResults.name?.toUpperCase()}</h3>
             </form>
