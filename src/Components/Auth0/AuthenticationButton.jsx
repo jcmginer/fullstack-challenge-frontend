@@ -1,4 +1,3 @@
-
 import { useAuth0 } from '@auth0/auth0-react';
 import LoginAuth0Button from './LoginAuthButton';
 import LogoutAuthButton from './LogoutAuthButton';

@@ -1,5 +1,46 @@
-.grid{
-    display: "grid";
-    grid-template-columns: "repeat(3, 1fr)";
-    grid-gap: "16px";
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /*  margin-top: 40px; */
+}
+
+input{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    width: 500px;
+}
+
+.btn-search {
+    background-color: #00bfff;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 10px ;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+
+.result-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    padding: 20px;
+}
+
+img {
+    width: 150px;
+}
+
